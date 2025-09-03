@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Social Icons">
+<rect width="32" height="32" rx="8" fill="var(--fill-0, #081921)"/>
+<rect width="32" height="32" rx="8" fill="var(--fill-1, #081921)"/>
+<path id="Vector" d="M19.2334 16.8155L19.6191 14.301H17.2065V12.6699C17.2065 11.982 17.5436 11.3107 18.6242 11.3107H19.721V9.1699C19.721 9.1699 18.7256 9 17.7738 9C15.7868 9 14.488 10.2043 14.488 12.3845V14.301H12.2793V16.8155H14.488V22.8943C15.3887 23.0352 16.3058 23.0352 17.2065 22.8943V16.8155H19.2334Z" fill="var(--fill-0, white)"/>
+</g>
+</svg>
