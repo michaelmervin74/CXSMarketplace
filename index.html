@@ -922,16 +922,16 @@
                     </section>
 
                     {/* Pricing Section - Updated to match Figma design */}
-                    <section id="pricing" className="py-32 bg-white">
-                        <div className="max-w-7xl mx-auto px-32">
-                            <div className="flex items-start justify-between mb-20">
-                                <div className="w-[480px]">
-                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[72px] not-italic text-[#22252B] text-[60px]">
+                    <section id="pricing" className="py-16 md:py-32 bg-white">
+                        <div className="max-w-7xl mx-auto px-4 md:px-32">
+                            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-12 md:mb-20 gap-8 lg:gap-0">
+                                <div className="w-full lg:w-[480px]">
+                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[48px] md:leading-[72px] not-italic text-[#22252B] text-[40px] md:text-[60px]">
                                         Pricing
                                     </h2>
                                 </div>
-                                <div className="w-[640px] flex flex-col gap-12">
-                                    <p className="font-['Inter:regular',_sans-serif] leading-[24px] not-italic text-[#333740] text-[18px]">
+                                <div className="w-full lg:w-[640px] flex flex-col gap-6 md:gap-12">
+                                    <p className="font-['Inter:regular',_sans-serif] leading-[20px] md:leading-[24px] not-italic text-[#333740] text-[16px] md:text-[18px]">
                                         We offer a range of packages to suit your content needs. Get started with a quote and customize your plan accordingly. Don't hesitate to reach out to our Sales team with any questions.
                                     </p>
                                     <button className="bg-white border border-[#0a7c00] text-[#111215] px-6 py-2.5 rounded-[8px] font-['Inter:regular',_sans-serif] text-[16px] w-fit hover:bg-[#0a7c00] hover:text-white transition-colors">
@@ -940,14 +940,14 @@
                                 </div>
                             </div>
                             
-                            <div className="flex flex-col gap-20 pb-16 pt-16">
-                                <div className="flex flex-col gap-12 items-center">
-                                    <div className="flex gap-6 items-start">
+                            <div className="flex flex-col gap-12 md:gap-20 pb-8 md:pb-16 pt-8 md:pt-16">
+                                <div className="flex flex-col gap-8 md:gap-12 items-center">
+                                    <div className="flex flex-col lg:flex-row gap-4 md:gap-6 items-start w-full max-w-6xl">
                                         {/* Basic Package */}
-                                        <div className="bg-[#032900] relative rounded-[16px] w-[400px] overflow-hidden">
+                                        <div className="bg-[#032900] relative rounded-[16px] w-full lg:w-[400px] overflow-hidden">
                                             <div className="absolute inset-0 bg-gradient-to-b from-[#569800] via-[#e7ffc9] to-[#00a748] opacity-40"></div>
-                                            <div className="relative p-8 pt-10 flex flex-col gap-6">
-                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[40px] text-white leading-[48px]">Basic</h3>
+                                            <div className="relative p-6 md:p-8 pt-8 md:pt-10 flex flex-col gap-4 md:gap-6">
+                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[32px] md:text-[40px] text-white leading-[40px] md:leading-[48px]">Basic</h3>
                                                 
                                                 <div className="flex flex-col gap-1">
                                                     <div className="flex gap-1 items-center">
@@ -1000,10 +1000,10 @@
                                         </div>
                                         
                                         {/* Pro Package */}
-                                        <div className="bg-white relative rounded-[16px] w-[400px] overflow-hidden border border-black">
+                                        <div className="bg-white relative rounded-[16px] w-full lg:w-[400px] overflow-hidden border border-black">
                                             <div className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-70" style={{backgroundImage: "url('http://localhost:3845/assets/d36c2881822d23ee9d438d25f3a28c08f7a18a2a.png')"}}></div>
-                                            <div className="relative p-8 pt-10 flex flex-col gap-6">
-                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[40px] text-white leading-[48px]">Pro</h3>
+                                            <div className="relative p-6 md:p-8 pt-8 md:pt-10 flex flex-col gap-4 md:gap-6">
+                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[32px] md:text-[40px] text-white leading-[40px] md:leading-[48px]">Pro</h3>
                                                 
                                                 <div className="flex flex-col gap-1">
                                                     <div className="flex gap-1 items-center">
@@ -1068,10 +1068,10 @@
                                         </div>
                                         
                                         {/* Premium Package */}
-                                        <div className="bg-white relative rounded-[16px] w-[400px] overflow-hidden">
+                                        <div className="bg-white relative rounded-[16px] w-full lg:w-[400px] overflow-hidden">
                                             <div className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-70" style={{backgroundImage: "url('http://localhost:3845/assets/96b1166c204726a7c45d28ac5424da54e0d3b8b6.png')"}}></div>
-                                            <div className="relative p-8 pt-10 flex flex-col gap-6">
-                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[40px] text-white leading-[48px]">Premium</h3>
+                                            <div className="relative p-6 md:p-8 pt-8 md:pt-10 flex flex-col gap-4 md:gap-6">
+                                                <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[32px] md:text-[40px] text-white leading-[40px] md:leading-[48px]">Premium</h3>
                                                 
                                                 <div className="flex flex-col gap-1">
                                                     <div className="flex gap-1 items-center">
@@ -1148,9 +1148,9 @@
                                         </div>
                                     </div>
                                     
-                                    <div className="flex flex-col gap-2 items-center">
-                                        <p className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[#333740] text-[20px] text-center leading-[24px]">Additional charges for each package may incur</p>
-                                        <div className="flex gap-4 items-start">
+                                    <div className="flex flex-col gap-2 items-center px-4">
+                                        <p className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[#333740] text-[18px] md:text-[20px] text-center leading-[22px] md:leading-[24px]">Additional charges for each package may incur</p>
+                                        <div className="flex flex-wrap gap-2 md:gap-4 items-start justify-center">
                                             <div className="flex gap-1 items-center">
                                                 <svg className="w-5 h-5 text-[#333740]" fill="currentColor" viewBox="0 0 24 24">
                                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -1183,20 +1183,21 @@
                     </section>
 
                     {/* Comparison Table Section */}
-                    <section className="py-32 bg-[#020d10] relative overflow-hidden">
+                    <section className="py-16 md:py-32 bg-[#020d10] relative overflow-hidden">
                         <div className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-70" style={{backgroundImage: "url('http://localhost:3845/assets/7e2f4b13b8101d455a2fe962796591ee30c6e36e.png')"}}></div>
-                        <div className="max-w-7xl mx-auto px-32 relative">
-                            <div className="mb-20">
-                                <div className="w-[480px]">
-                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[48px] text-white leading-[56px]">
+                        <div className="max-w-7xl mx-auto px-4 md:px-32 relative">
+                            <div className="mb-12 md:mb-20">
+                                <div className="w-full lg:w-[480px]">
+                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[32px] md:text-[48px] text-white leading-[40px] md:leading-[56px]">
                                         Compare packages
                                     </h2>
                                 </div>
                             </div>
                             
                             <div className="relative">
-                                <div className="bg-[#737780] bg-opacity-30 rounded-[16px] overflow-hidden">
-                                    <table className="w-full">
+                                {/* Desktop Table */}
+                                <div className="hidden md:block bg-[#737780] bg-opacity-30 rounded-[16px] overflow-hidden overflow-x-auto">
+                                    <table className="w-full min-w-[800px]">
                                         <thead>
                                             <tr className="border-b border-white border-opacity-20">
                                                 <th className="w-[309px] p-6 text-left">
@@ -1414,6 +1415,232 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/* Mobile Table */}
+                                <div className="md:hidden bg-[#737780] bg-opacity-30 rounded-[12px] overflow-hidden">
+                                    <div className="relative">
+                                        {/* Table Headers */}
+                                        <div className="bg-[#737780] bg-opacity-30 rounded-tl-[12px] rounded-tr-[12px] h-[82px] flex items-center justify-center">
+                                            <div className="flex w-full">
+                                                <div className="w-[92px] flex items-center justify-center">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Features
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[14px] text-white leading-[18px] text-center">
+                                                        Basic
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[14px] text-white leading-[18px] text-center">
+                                                        Pro
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[14px] text-white leading-[18px] text-center">
+                                                        Premium
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Table Rows */}
+                                        <div className="space-y-0">
+                                            {/* Total pages */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Total pages
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 100
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 500
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 1000
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Authorized users */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Authorized users
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 10
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 20
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Up to 30
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Customization options */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Customization options
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Limited
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Advanced
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Full
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* SEO optimization */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        SEO optimization
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Basic
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Advanced
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* CRM integration */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        CRM integration
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+
+                                            {/* Analytics dashboard */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Analytics dashboard
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Basic
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Advanced
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <div className="font-['Inter:regular',_sans-serif] text-[12px] text-white leading-[18px] text-center">
+                                                        Intelligent
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Web/graphic designer */}
+                                            <div className="flex h-[72px] border-b border-white border-opacity-20">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Web/graphic designer
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+
+                                            {/* Custom template */}
+                                            <div className="flex h-[72px]">
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-30 rounded-bl-[12px]">
+                                                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold text-[12px] text-white leading-[18px] text-center">
+                                                        Custom template
+                                                    </div>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                                    </svg>
+                                                </div>
+                                                <div className="w-[92px] flex items-center justify-center bg-[#737780] bg-opacity-15 rounded-br-[12px]">
+                                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
