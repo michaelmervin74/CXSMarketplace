@@ -480,106 +480,212 @@
                         </div>
                     </section>
 
-                    {/* Template Gallery - Updated to match Figma design exactly */}
-                    <section id="gallery" className="py-20 lg:py-32 bg-white">
-                        <div className="max-w-7xl mx-auto px-6 lg:px-32">
-                            {/* Header */}
-                            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-20 gap-6">
-                                <div className="flex flex-col items-start justify-center w-full lg:w-[960px]">
-                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[1.2] lg:leading-[56px] not-italic text-[#22252B] text-3xl lg:text-[48px] w-full">
-                                        Explore our gallery of website templates
+                    {/*  Gallery Section*/}
+                    <section id="gallery" className="bg-white">
+                        <div className="flex flex-col gap-20 items-start justify-start pb-16 pt-32 px-0 w-full">
+                            {/* Header Section */}
+                            <div className="flex items-start justify-between px-32 py-0 w-full">
+                                <div className="flex flex-col items-start justify-center w-[480px]">
+                                    <h2 className="font-['Inter:semibold',_sans-serif] font-semibold text-[#22252b] text-[60px] w-full leading-[72px]">
+                                        Gallery
                                     </h2>
                                 </div>
-                                <div className="bg-[#0A7C00] box-border flex gap-2 items-center justify-center lg:justify-start px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] hover:bg-[#0A7C00]/90 transition-colors self-start lg:self-auto">
-                                    <span className="font-['Inter:regular',_sans-serif] leading-[20px] not-italic text-[16px] text-nowrap text-white">
-                                        View all
-                                    </span>
-                                    <div className="relative shrink-0 size-5">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill="currentColor"/>
-                                        </svg>
+                                <div className="flex flex-col gap-12 items-start justify-center w-[640px]">
+                                    <p className="font-['Inter:regular',_sans-serif] text-[#333740] text-[18px] w-full leading-[24px]">
+                                        Explore a diverse collection of sleek and versatile website templates designed to elevate your online presence effortlessly.
+                                    </p>
+                                    <div className="flex gap-2 items-start justify-start w-full">
+                                        <div className="flex-1 bg-white border border-[#d0d1d4] flex h-10 items-center justify-start pl-3 pr-1.5 py-1.5 rounded-[8px]">
+                                            <div className="flex gap-2 items-center justify-start">
+                                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                                </svg>
+                                                <span className="font-['Inter:regular',_sans-serif] text-[#737780] text-[14px] leading-[18px]">
+                                                    Search for templates...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <button className="bg-[#0a7c00] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-white text-[16px] leading-[20px]">
+                                                Search
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            
-                            {/* Template Cards Container */}
-                            <div className="w-full overflow-x-auto">
-                                <div className="flex gap-4 lg:gap-6 min-w-max lg:min-w-0 lg:grid lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3">
-                                    {/* SaaS 1.0 */}
-                                    <div className="flex flex-col gap-4 h-[400px] items-start justify-end overflow-hidden p-6 lg:p-[40px] rounded-[16px] w-[320px] lg:w-full relative template-card-hover bg-gradient-to-br from-[#4DD58C] to-[#04261E]">
-                                        {/* Template Preview */}
-                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#04261E] opacity-80"></div>
-                                        <div className="absolute top-4 left-4 right-4 h-48 bg-white rounded-lg shadow-lg flex items-center justify-center">
-                                            <div className="text-center">
-                                                <div className="w-16 h-16 bg-[#4DD58C] rounded-lg flex items-center justify-center mx-auto mb-3">
-                                                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                                                    </svg>
-                                                </div>
-                                                <p className="text-[#04261E] font-medium text-sm">SaaS Dashboard</p>
-                                            </div>
-                                        </div>
-                                        <div className="flex items-center justify-between relative shrink-0 w-full z-10">
-                                            <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[1.2] lg:leading-[40px] not-italic relative shrink-0 text-2xl lg:text-[32px] text-nowrap text-white tracking-[-1px]">
-                                                SaaS 1.0
-                                            </h3>
-                                            <button className="box-border flex gap-2 items-center justify-center p-[10px] relative rounded-[8px] shrink-0 bg-white/20 hover:bg-white/30 transition-colors">
-                                                <div className="relative shrink-0 size-5">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill="currentColor"/>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    
-                                    {/* E-commerce 1.0 */}
-                                    <div className="flex flex-col gap-4 h-[400px] items-start justify-end overflow-hidden p-6 lg:p-[40px] rounded-[16px] w-[320px] lg:w-full relative template-card-hover bg-gradient-to-br from-[#6D83D9] to-[#131D45]">
-                                        {/* Template Preview */}
-                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#131D45] opacity-80"></div>
-                                        <div className="absolute top-4 left-4 right-4 h-48 bg-white rounded-lg shadow-lg flex items-center justify-center">
-                                            <div className="text-center">
-                                                <div className="w-16 h-16 bg-[#6D83D9] rounded-lg flex items-center justify-center mx-auto mb-3">
-                                                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path d="M3 3a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                                                    </svg>
-                                                </div>
-                                                <p className="text-[#131D45] font-medium text-sm">E-commerce Store</p>
-                                            </div>
-                                        </div>
-                                        <div className="flex items-center justify-between relative shrink-0 w-full z-10">
-                                            <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[1.2] lg:leading-[40px] not-italic relative shrink-0 text-2xl lg:text-[32px] text-nowrap text-white tracking-[-1px]">
-                                                E-commerce 1.0
-                                            </h3>
-                                            <button className="box-border flex gap-2 items-center justify-center p-[10px] relative rounded-[8px] shrink-0 bg-white/20 hover:bg-white/30 transition-colors">
-                                                <div className="relative shrink-0 size-5">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill="currentColor"/>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    
-                                    {/* Startup 1.0 */}
-                                    <div className="flex flex-col gap-3 h-[400px] items-start justify-end overflow-hidden p-[40px] rounded-[16px] w-[500px] relative template-card-hover">
-                                        <div className="absolute bg-[#BD550F] bottom-0 box-border flex flex-col from-[#00000000] gap-2.5 items-start justify-start left-0 overflow-hidden pb-0 pl-[50px] pr-0 pt-[50px] right-[-4.8%] to-85% to-[#421E06] top-0 w-[524px]">
-                                            <div className="aspect-[1726/1124] basis-0 bg-[position:0%_0%,_50%_50%] bg-gradient-to-b bg-size-[auto,cover] from-[#00000000] grow min-h-px min-w-px rounded-tl-[6px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] shrink-0 to-85% to-[#421E06]"></div>
-                                        </div>
-                                        <div className="flex items-center justify-between relative shrink-0 w-full">
-                                            <h3 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[40px] not-italic relative shrink-0 text-[32px] text-nowrap text-white tracking-[-1px]">
-                                                Startup 1.0
-                                            </h3>
-                                            <button className="box-border flex gap-2 items-center justify-start p-[10px] relative rounded-[8px] shrink-0">
-                                                <div className="relative shrink-0 size-5">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill="currentColor"/>
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                        </div>
+                        </div>
+
+                        {/* Filter and Sort Section */}
+                        <div className="flex flex-col gap-20 items-start justify-start px-0 py-16 w-full">
+                            <div className="flex flex-wrap items-start justify-between px-32 py-0 w-full">
+                                <div className="flex flex-col gap-3 items-start justify-start w-[960px]">
+                                    <p className="font-['Inter:regular',_sans-serif] text-[#333740] text-[18px] leading-[24px]">
+                                        Filter by features
+                                    </p>
+                                    <div className="flex flex-wrap gap-2 items-end justify-start w-full">
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Advanced search
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Blog integration
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Calendar/booking tool
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Case studies
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Image gallery
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Log in/registration
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Newsletter signup
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Pricing table
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Shopping cart
+                                            </span>
+                                        </button>
+                                        <button className="bg-white border border-[#d0d1d4] flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                            <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                                Social media feed
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
+                                <div className="flex flex-col gap-3 items-start justify-start">
+                                    <p className="font-['Inter:regular',_sans-serif] text-[#333740] text-[18px] leading-[24px]">
+                                        Sort by
+                                    </p>
+                                    <button className="bg-white border border-[#d0d1d4] flex gap-4 items-center justify-start px-3.5 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]">
+                                        <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[14px] leading-[18px] w-[100px]">
+                                            Most Popular
+                                        </span>
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            {/* Template Cards Grid - Exact Figma Layout */}
+                            <div className="grid grid-cols-3 gap-4 px-32 py-0 w-full">
+
+                                {/* 1.SaaS 1.0 */}
+                                <div className="aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('saas-card-bg.svg')` }}>
+                                </div>
+
+                                {/* 2.E-commerce 1.0*/}
+                                <div className="aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('e-commerce-card-bg-image.svg')` }}>
+                                </div>
+
+                                {/* 3.Startup 1.0 */}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('startup-card-bg-image.svg')` }}>  
+                                </div>
+
+                                {/*4.Portfolio */}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('portfolio-card-bg-image.svg')` }}>  
+                                </div>
+                                {/*5.Event 1.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('event-card-bg-image.svg')` }}>  
+                                </div>
+
+                                {/*6. Agency 1.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('saas-card-bg.svg')` }}>  
+                                </div>
+
+                            </div>
+                        </div>
+
+                        {/* CTA Section - Exact Figma Design */}
+                        <div className="gap-6 items-center justify-center overflow-hidden px-0 py-32 relative"  style={{ backgroundImage: `url('http://localhost:3845/assets/5672096bed4e40fb96b0a9404540cc4f40a281fc.png')` }}>
+                            <div className="flex flex-col gap-12 items-start justify-center overflow-hidden px-32 py-0 w-full">
+                                <div className="flex flex-col gap-6 items-center justify-start relative text-white w-[960px]">
+                                    <h2 className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative text-[48px] w-full leading-[56px]">
+                                        Start fresh with the help of AI
+                                    </h2>
+                                    <p className="font-['Inter:regular',_sans-serif] relative text-[18px] w-full leading-[24px]">
+                                        Looking for something different? Use Marketplace AI to design a custom website template built around your brand, your content, and your goals. Choose your colors, fonts, features, layouts, and more to craft something truly your own.
+                                    </p>
+                                </div>
+                                <div className="flex gap-4 items-start justify-start">
+                                    <button className="bg-[#0a7c00] flex gap-2 items-center justify-start px-6 py-2.5 rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)]">
+                                        <svg className="w-[18.333px] h-[18.333px]" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                                        </svg>
+                                        <span className="font-['Inter:regular',_sans-serif] text-white text-[16px] leading-[20px]">
+                                            Create template
+                                        </span>
+                                    </button>
+                                    <button className="bg-white flex gap-2.5 items-center justify-center px-6 py-2.5 rounded-[8px]">
+                                        <div className="border border-[#0a7c00] border-solid inset-0 pointer-events-none rounded-[8px] shadow-[0px_1px_2px_0px_rgba(10,13,18,0.05)] absolute"></div>
+                                        <span className="font-['Inter:regular',_sans-serif] text-[#111215] text-[16px] leading-[20px]">
+                                            Watch tutorial
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Filter and Sort Section */}
+                        <div className="flex flex-col gap-20 items-start justify-start px-0 py-16 w-full">
+                            {/* Template Cards Grid - Exact Figma Layout */}
+                            <div className="grid grid-cols-3 gap-4 px-32 py-0 w-full">
+
+                                {/* 1.E-commerce 2.0 */}
+                                <div className="aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('e-commerce-card-bg-image-2.svg')` }}>
+                                </div>
+
+                                {/* 2.Portfolio 2.0*/}
+                                <div className="aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('portfolio-card-bg-image-2.svg')` }}>
+                                </div>
+
+                                {/* 3.News 1.0 */}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('news-card-bg-image.svg')` }}>  
+                                </div>
+
+                                {/*4. Startup 2.0 */}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('startup-card-bg-image-2.svg')` }}>  
+                                </div>
+                                {/*5.SaaS 2.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('saas-card-bg-image-2.svg')` }}>  
+                                </div>
+
+                                {/*6. Business 1.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('business-card-bg-image.svg')` }}>  
+                                </div>
+
+                                {/*7. Blog 1.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('blog-card-bg-image.svg')` }}>  
+                                </div>
+
+                                {/*7. Agency 2.0*/}
+                                <div className=" aspect-[400/300] rounded-[16px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url('agency-card-bg-image-2.svg')` }}>  
+                                </div>
+
                             </div>
                         </div>
                     </section>
